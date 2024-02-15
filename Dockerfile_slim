@@ -1,0 +1,4 @@
+FROM salesforce/cli:latest-rc-slim
+
+RUN sf version
+RUN sf plugins install @salesforce/sfdx-scanner@latest
