@@ -1,4 +1,4 @@
-name: Build SF CLI (RC Full) + SFDX Scanner
+name: Build SF CLI (RC Slim) + SFDX Scanner
 
 on:
   workflow_dispatch:
