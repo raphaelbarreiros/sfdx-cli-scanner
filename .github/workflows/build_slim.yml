@@ -2,6 +2,9 @@ name: Build SF CLI (RC Slim) + SFDX Scanner
 
 on:
   workflow_dispatch:
+  schedule:
+    # Wednesdays 2PM central
+    - cron: '0 19 * * 3'
   push:
     branches: ['master']
 
