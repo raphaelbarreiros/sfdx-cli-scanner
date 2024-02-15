@@ -16,7 +16,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}
+        run: docker build . --file ./Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}
 
       - name: Docker Push
         uses: docker/build-push-action@v2
